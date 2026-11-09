@@ -1,0 +1,30 @@
+{
+  "matches.csv": {
+    "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/matches.csv",
+    "author": "Joshua C. Fjelstul",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+  },
+  "tournament_standings.csv": {
+    "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/tournament_standings.csv",
+    "author": "Joshua C. Fjelstul",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sha256": "a1649d448bb769ee1e808e567e5fdc2c3256267aaf14ff5902e26a5b2a7344ea"
+  },
+  "tournaments.csv": {
+    "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/tournaments.csv",
+    "author": "Joshua C. Fjelstul",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sha256": "906b122d80aae5302486bafa9dfd925378503a2a11de6f5db39d6c4879040ce0"
+  },
+  "independent_scores.csv": {
+    "url": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
+    "transformation": "2002~2022년 FIFA World Cup 384경기에서 날짜, 양 팀, 양 팀 득점 열 추출",
+    "upstream_sha256": "09aac809e317f3004c69720a38addb656c49ebb19f1937deab96f96e3362257a",
+    "sha256": "f2363b445a136973fc4c0920b4ac2fa5a7f9a5aa9ea32559e2a16aed43378f1a"
+  },
+  "korea_positions.csv": {
+    "description": "대한민국 최종 순위 6개를 대회별 자료에서 전사. 출처는 README 참조.",
+    "sha256": "9e4ebef7082a2635f9073208fb632b14c4a26c41f04f1a4d51d7099d9249195c"
+  }
+}
