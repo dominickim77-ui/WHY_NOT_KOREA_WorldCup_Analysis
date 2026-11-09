@@ -1,0 +1,28 @@
+
+# API Keys & Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.log
+*.tmp
+
+# Database
+# DB files are allowed after security review.
