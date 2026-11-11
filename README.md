@@ -207,3 +207,34 @@ python -m venv .venv
 
 실행 결과는 [test_results.txt](test_results.txt), 원본 출처와 파일 해시는 [data/provenance.json](data/provenance.json)에서 확인할 수 있다.
 
+
+## Git 저장소 구조 정리 (2026-11-11)
+
+프로젝트 작업 중 동일한 이름의 폴더와 Git 저장소가 중첩되어 작업 경로가 혼동되는 문제가 발생했다.
+
+두 저장소의 파일과 Git 기록을 비교하고, 각각 백업 및 복원 검증을 완료한 후 GitHub 최신 버전을 기준으로 단일 저장소로 통합했다.
+
+### 최종 프로젝트 경로 (Windows)
+
+`C:\WORKSPACE\WHY_NOT_KOREA_WorldCup_Analysis`
+
+### 검증 결과
+
+- 최종 프로젝트 폴더에 `.git`이 하나만 있는 것을 확인했다.
+- 기존 README, 원본 데이터, 그래프 8개, RAG, 기사 및 Streamlit 앱을 보존했다.
+- 로컬 `main`과 GitHub `origin/main`의 Commit 일치를 확인했다.
+- Git 작업 트리에 미커밋 변경이나 미해결 충돌이 없었다.
+- 기존 검토용 Python 환경에서 Streamlit 서버를 실행해 HTTP 200 응답을 확인했다.
+- 두 저장소의 백업 및 파일 무결성 검증을 완료했다.
+
+### 프로젝트 실행 안내
+
+VS Code에서 `C:\WORKSPACE\WHY_NOT_KOREA_WorldCup_Analysis` 폴더를 직접 연다.
+
+Streamlit은 README의 설치 절차에 따라 환경을 준비한 후 `start_worldcup_review.cmd`로 실행한다.
+
+접속 주소: http://localhost:8501
+
+이 주소는 Streamlit 서버를 실행한 컴퓨터에서만 사용할 수 있다.
+
+
