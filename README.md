@@ -110,7 +110,26 @@
 
 Python이 먼저 수치와 그래프를 재현한다. 기사 작성에는 검증을 통과한 요약표와 데이터 정의를 근거로 제공한다. 프롬프트에 기간·단위·비교 집단·승부차기 규칙을 적고, 주어진 표에서 확인할 수 있는 주장만 초안에 포함하도록 요청한다. 편집자는 숫자를 CSV에 대조하고 기사 제목이 인과관계를 암시하는지 확인한다. 업데이트한 기사 초안은 [article.md](article.md)에 있다. 기존 노트북에는 OpenAI API 호출 단계가 있었으며, 이번 분석의 재현에는 API 키가 필요 없다.
 
-**검색 증강 생성(Retrieval-Augmented Generation, RAG)은 설계 단계다.** 현재 코드의 로컬 CSV 로딩과 검증된 요약표를 프롬프트에 직접 첨부하는 방식은 수동 근거 제공이다. RAG를 구현하려면 질문에 맞춰 출처와 근거 행을 조회하는 단계와, 조회 결과 및 근거 ID를 모델에 전달하는 단계를 연결해야 한다. 기존 설계는 [legacy/docs/RAG_DESIGN.md](legacy/docs/RAG_DESIGN.md)에 보관했다.
+**검색 증강 생성(Retrieval-Augmented Generation, RAG)의 구조화 근거 검색과 추출형 답변을 구현했다.** 질문의 대상·연도·항목으로 실제 CSV 행을 검색한 뒤 검색 결과에서만 답변을 구성한다. 외부 LLM 생성 단계는 사용하지 않으며 자유로운 일반 질문을 처리하는 챗봇은 아니다. [RAG 설계](docs/RAG_DESIGN.md)와 [구현 및 한계](docs/RAG_IMPLEMENTATION.md)를 참고한다.
+
+### 근거 기반 질문·답변 실행
+
+```powershell
+python scripts/rag_qa.py "대한민국 2002~2022 경기 수 승리 득점 실점 승률"
+python scripts/rag_qa.py "한국 2026 경기 수"
+python -B -m unittest discover -s scripts -p test_rag_qa.py -v
+```
+
+대한민국의 경기 수·승리·득점·실점·승률과 대회별 순위를 지원한다. 연도를 생략하면 2002–2022 전체 기록을 조회한다. 각 답변에는 근거 ID, CSV 경로·행·열 및 SHA-256이 포함된다. 2026년이나 전술적 원인 등 근거가 없는 질문에는 **확인 불가**를 반환한다.
+
+실행 JSON을 HTML로 표시한 실제 브라우저 스크린샷이다. 실시간 채팅 UI 화면은 아니다.
+
+![근거 ID와 실제 조회 결과](docs/rag_evidence/supported.png)
+
+![범위 밖·전술 질문의 확인 불가 결과](docs/rag_evidence/unverifiable.png)
+
+[실행 원본 JSON](docs/rag_evidence/results.json) · [테스트 결과](docs/rag_evidence/test_results.txt)
+
 
 ## VS Code에서 재현
 
