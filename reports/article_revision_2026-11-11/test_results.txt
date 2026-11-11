@@ -1,0 +1,19 @@
+Working directory: C:\WORKSPACE\WHY_NOT_KOREA_WorldCup_Analysis\WHY_NOT_KOREA_WorldCup_Analysis
+Command: python -B -m unittest discover -s scripts -p test_*.py -v
+Exit code: 0
+
+test_argentina_conflict_and_missing_rank_scope (test_article_factcheck.ArticleFactcheckTests.test_argentina_conflict_and_missing_rank_scope) ... ok
+test_article_versions_and_counts (test_article_factcheck.ArticleFactcheckTests.test_article_versions_and_counts) ... ok
+test_csv_evidence_coordinates_and_hashes (test_article_factcheck.ArticleFactcheckTests.test_csv_evidence_coordinates_and_hashes) ... ok
+test_fail_closed_and_causal_review (test_article_factcheck.ArticleFactcheckTests.test_fail_closed_and_causal_review) ... ok
+test_abstentions (test_rag_qa.RagTests.test_abstentions) ... ok
+test_instruction_behavior (test_rag_qa.RagTests.test_instruction_behavior) ... ok
+test_instructions_loaded (test_rag_qa.RagTests.test_instructions_loaded) ... ok
+test_supported_and_citations (test_rag_qa.RagTests.test_supported_and_citations) ... ok
+test_year (test_rag_qa.RagTests.test_year) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.092s
+
+OK
+

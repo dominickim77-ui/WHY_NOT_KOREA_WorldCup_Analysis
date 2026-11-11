@@ -3,19 +3,22 @@
     "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/matches.csv",
     "author": "Joshua C. Fjelstul",
     "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875",
+    "hash_normalization": "CRLF-to-LF"
   },
   "tournament_standings.csv": {
     "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/tournament_standings.csv",
     "author": "Joshua C. Fjelstul",
     "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sha256": "a1649d448bb769ee1e808e567e5fdc2c3256267aaf14ff5902e26a5b2a7344ea"
+    "sha256": "a1649d448bb769ee1e808e567e5fdc2c3256267aaf14ff5902e26a5b2a7344ea",
+    "hash_normalization": "CRLF-to-LF"
   },
   "tournaments.csv": {
     "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/tournaments.csv",
     "author": "Joshua C. Fjelstul",
     "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sha256": "906b122d80aae5302486bafa9dfd925378503a2a11de6f5db39d6c4879040ce0"
+    "sha256": "906b122d80aae5302486bafa9dfd925378503a2a11de6f5db39d6c4879040ce0",
+    "hash_normalization": "CRLF-to-LF"
   },
   "independent_scores.csv": {
     "url": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
@@ -25,6 +28,16 @@
   },
   "korea_positions.csv": {
     "description": "대한민국 최종 순위 6개를 대회별 자료에서 전사. 출처는 README 참조.",
-    "sha256": "9e4ebef7082a2635f9073208fb632b14c4a26c41f04f1a4d51d7099d9249195c"
+    "sha256": "1599e79a812f33519a15feddad4e547a43043b6085456cef6a89f683446d4d0e",
+    "hash_normalization": "CRLF-to-LF",
+    "previous_sha256": "9e4ebef7082a2635f9073208fb632b14c4a26c41f04f1a4d51d7099d9249195c",
+    "verification": {
+      "date": "2026-11-11",
+      "git_source": "38a2f0543fc3540d433c67529ac6f15ab587a8df:data/korea_positions.csv",
+      "comparison": "All six rows equal the staged and incoming Git blobs; CSV values unchanged.",
+      "2018_source": "https://www.yna.co.kr/view/AKR20180629061000007",
+      "2018_verified_position": 19,
+      "previous_hash_note": "Old digest is not reproduced by LF/CRLF, UTF-8 BOM, or 2018 rank 25 variants. Original generating bytes are unavailable; do not claim exact cause established."
+    }
   }
 }

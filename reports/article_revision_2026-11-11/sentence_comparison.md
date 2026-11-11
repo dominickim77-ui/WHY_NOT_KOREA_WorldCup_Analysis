@@ -1,0 +1,18 @@
+# 문장 수정 전후 비교
+
+| 원문 위치 | 수정본 줄 | 이전 | 이후 | 원문 | 수정본 | 이유 | 근거 ID |
+|---|---:|---|---|---|---|---|---|
+| article.md:11 | 11 | PASS | PASS | 자료는 Fjelstul World Cup Database의 본선 경기 기록이며 집계 방식과 교차 검증 내역은 [README](README.md)에 있다. | 자료는 Fjelstul World Cup Database의 본선 경기 기록이며 집계 방식과 교차 검증 내역은 [README](../../README.md)에 있다. | 저장 위치에 맞춰 README 상대 링크만 고쳤다. | M-all |
+| WHY_NOT_KOREA_Final_Article.md:1 | 1 | REVIEW | 편집 | # 한국은 왜 월드컵에서 우승하지 못했을까…기록만으로 원인을 단정할 수는 없다 | # 한국의 월드컵 득점과 실점은 비교 대상 국가들과 어떻게 달랐나 | 관찰 가능한 국가 간 비교를 제목으로 삼았다. | — |
+| WHY_NOT_KOREA_Final_Article.md:11 | 11 | FAIL | PASS | 승률은 브라질과 독일이 각각 67.6%, 아르헨티나가 64.5%였고, 한국은 29.2%였다. | 승률은 브라질과 독일이 각각 67.6%, 아르헨티나가 58.1%였고, 한국은 29.2%였다. | 아르헨티나 18승 ÷ 31경기 × 100을 소수 첫째 자리로 반올림했다. | F-KOR-2002–2022-win_rate, FS-국가별 비교, M-ARG-2002–2022, M-BRA-2002–2022, M-DEU-2002–2022, M-KOR-2002–2022, S-ARG-legacy, S-country_summary-ARG-None-win_rate, S-country_summary-BRA-None-win_rate, S-country_summary-DEU-None-win_rate, S-country_summary-KOR-None-win_rate |
+| WHY_NOT_KOREA_Final_Article.md:11 | 11 | FAIL | PASS | 브라질과 독일은 각각 34경기에서 23승, 아르헨티나는 31경기에서 20승을 기록했다. | 브라질과 독일은 각각 34경기에서 23승, 아르헨티나는 31경기에서 18승을 기록했다. | 정규·연장 종료 득점이 실점보다 큰 경기를 집계했다. | FS-국가별 비교, M-ARG-2002–2022, M-BRA-2002–2022, M-DEU-2002–2022, S-ARG-legacy, S-country_summary-ARG-None-games, S-country_summary-ARG-None-wins, S-country_summary-BRA-None-games, S-country_summary-BRA-None-wins, S-country_summary-DEU-None-games, S-country_summary-DEU-None-wins |
+| WHY_NOT_KOREA_Final_Article.md:21 | 21 | — | 편집 | ### 성적 단계별 평균과 상관관계 | ### 최종 성적 단계별 평균 | 재계산할 수 없는 순위 상관관계를 소제목에서 뺐다. | — |
+| WHY_NOT_KOREA_Final_Article.md:23 | 23 | FAIL | PASS | 최종 성적 단계별 자료에는 조별리그 탈락 팀 96개, 16강 진출 팀 48개, 8강 진출 팀 24개, 4강 진출 팀 24개가 제시돼 있다. | 최종 성적별 팀·대회 기록은 조별리그 탈락 96건, 16강 탈락 48건, 8강 탈락 24건, 4강 진출 24건이다. | 최종 탈락 단계와 팀·대회 집계 단위를 명시했다. | FS-최종 성적별 비교, M-all, M-stages |
+| WHY_NOT_KOREA_Final_Article.md:23 | 23 | — | 편집 | 각 참가팀의 경기당 득점과 경기당 실점을 먼저 계산한 뒤, 그 값을 성적 단계별로 평균 낸 결과다. | 팀·대회별로 득점과 실점을 각각 경기 수로 나눈 뒤, 같은 단계에 속한 기록의 산술평균을 냈다. | 평균의 계산 단위와 분모를 명시했다. | — |
+| WHY_NOT_KOREA_Final_Article.md:23 | 23 | FAIL | PASS | 조별리그 탈락 팀의 평균은 경기당 0.826득점·1.694실점, 8강 진출 팀은 1.642득점·0.808실점, 16강 진출 팀은 1.240득점·1.255실점, 4강 진출 팀은 1.738득점·0.827실점이다. | 조별리그 탈락 팀은 경기당 0.826득점·1.694실점, 8강 탈락 팀은 1.642득점·0.808실점, 16강 탈락 팀은 1.240득점·1.255실점, 4강 진출 팀은 1.738득점·0.827실점이었다. | 재현된 평균을 유지하고 비교 집단 명칭을 바로잡았다. | FS-최종 성적별 비교, M-all, M-stages |
+| WHY_NOT_KOREA_Final_Article.md:25 | — | HOLD | 본문 제외 | 상관관계 분석에서 순위 숫자가 낮을수록 좋은 성적이라는 점을 전제로, 순위와 경기당 득점은 음의 상관관계(-0.678), 순위와 경기당 실점은 양의 상관관계(0.637)를 보였다. | — | 대회별 1~4위만 있는 순위 CSV로는 192개 기록의 상관계수를 재계산할 수 없다. | FS-상관관계, M-all, R-podium |
+| WHY_NOT_KOREA_Final_Article.md:25 | — | HOLD | 본문 제외 | 득점이 많거나 실점이 적은 경우 더 좋은 순위와 함께 나타나는 경향이 있었지만, 상관관계가 인과관계를 증명하는 것은 아니다. | — | 상관계수 방향을 확인하는 데도 전체 순위가 필요하다. | FS-상관관계, M-all, R-podium |
+| WHY_NOT_KOREA_Final_Article.md:29 | 27 | HOLD | PASS | **출처:** Kaggle FIFA World Cup Dataset | **재검증 자료** — Fjelstul World Cup Database의 본선 경기·순위 CSV | 기존 Kaggle 원본 URL과 버전은 확인 불가다. 수정본 재검증에 사용한 출처를 표기했다. | FS-국가별 비교, FS-대한민국 대회별 성적, FS-상관관계, FS-최종 성적별 비교, M-all, P-matches, R-podium |
+| WHY_NOT_KOREA_Final_Article.md:32 | 30 | PASS | PASS | 자료는 개별 경기 기록이 아닌 국가별 대회 집계 자료로, 상대팀 수준과 전술은 반영하지 않는다. | 경기별 스코어를 팀·대회별로 집계했으며, 상대팀 수준과 전술은 분석에 반영하지 않았다. | 재검증에 사용한 경기 단위 입력과 집계 단위를 명시했다. | FS-국가별 비교, FS-대한민국 대회별 성적, I-384, M-stages |
+| WHY_NOT_KOREA_Final_Article.md:32 | — | HOLD | 본문 제외 | FIFA 공식 자료와의 독립 대조는 아직 완료되지 않았다. | — | FIFA 공식 자료와 직접 대조했는지는 확인 불가다. | FS-대한민국 대회별 성적 |
+| WHY_NOT_KOREA_Final_Article.md:32 | — | — | 본문 제외 | 상관관계는 원인을 증명하지 않는다. | — | 상관분석을 뺀 뒤 남은 일반론을 정리했다. | — |

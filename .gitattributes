@@ -1,0 +1,8 @@
+
+# Provenance CSVs: retain stable LF bytes across Windows checkouts.
+data/matches.csv text eol=lf
+data/tournament_standings.csv text eol=lf
+data/tournaments.csv text eol=lf
+data/korea_positions.csv text eol=lf
+# The independent excerpt provenance records the exact CRLF bytes.
+data/independent_scores.csv text eol=crlf

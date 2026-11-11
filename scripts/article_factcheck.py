@@ -11,7 +11,7 @@ from operator import gt, lt
 from statistics import mean
 
 ARTICLES = {
-    "article.md": "82440a588a4c5ee376966115cc59fe487a7c72d305eeb93cc7627e2a90599020",
+    "article.md": "b7c0ef743e0d264707788ac95140cea8345e9896ffe1b44bbf7f479b111a0ebc",
     "WHY_NOT_KOREA_Final_Article.md": "01cf3bd45e86d09a9be4360a24acb2236cd9f9e917578cfb22bfe59f917022cf",
 }
 YEARS = tuple(range(2002, 2023, 4))
@@ -21,6 +21,11 @@ STATUSES = ("PASS", "FAIL", "HOLD", "REVIEW")
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def article_digest(path):
+    # Git may change line endings on checkout without changing the reviewed text.
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
 def sentences(article):
@@ -54,7 +59,11 @@ class Evidence:
                      "korea_positions", "legacy_comparison"):
             path = f"data/{name}.csv"
             sha = digest(root / path)
-            if name + ".csv" in provenance and sha != provenance[name + ".csv"]["sha256"]:
+            expected = provenance.get(name + ".csv")
+            provenance_sha = sha
+            if expected and expected.get("hash_normalization") == "CRLF-to-LF":
+                provenance_sha = hashlib.sha256((root / path).read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+            if expected and provenance_sha != expected["sha256"]:
                 raise ValueError(f"Provenance hash mismatch: {path}")
             with (root / path).open(encoding="utf-8-sig", newline="") as f:
                 reader = csv.DictReader(f)
@@ -360,9 +369,10 @@ def run(root):
     evidence = Evidence(root)
     plans, edits = reviewed_claims(evidence, rag)
     results, excluded = [], []
+    article_hashes = {name: article_digest(root / name) for name in ARTICLES}
     for article, reviewed_hash in ARTICLES.items():
         path = root / article
-        reviewed = digest(path) == reviewed_hash
+        reviewed = article_hashes[article] == reviewed_hash
         for i, (line, sentence) in enumerate(sentences(path.read_text(encoding="utf-8-sig"))):
             checks = plans[article].get(i, []) if reviewed else []
             # Review affirmative causal language and the older article's causal headline.
@@ -383,7 +393,7 @@ def run(root):
     used = {ref for r in results for c in r["checks"] for ref in c["evidence"]}
     return dict(scope=SCOPE, sentence_count=len(results),
                 counts={s: sum(r["status"] == s for r in results) for s in STATUSES},
-                article_sha256={name: digest(root / name) for name in ARTICLES},
+                article_sha256=article_hashes,
                 instructions_sha256=digest(root / "config/RAG_INSTRUCTIONS.md"),
                 results=results, excluded=excluded,
                 evidence={key: evidence.refs[key] for key in sorted(used)})

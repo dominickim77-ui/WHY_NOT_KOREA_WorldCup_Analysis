@@ -121,13 +121,13 @@ def analyze():
     assert len(champions) == 6 and champions.games.eq(7).all()
     group = annual.groupby("group").agg(margin=("margin", "mean"), count=("code", "size")).loc[GROUPS]
 
-    legacy = pd.read_csv(ROOT / "legacy/data/four_countries_from_notebook.csv")
+    legacy = pd.read_csv(DATA / "four_countries_from_notebook.csv")
     comparison = legacy.merge(country, left_on="Country", right_on="team", validate="one_to_one")
     assert len(comparison) == 4
     comparison["wins_with_shootout"] = comparison.wins + comparison.shootout_wins
     for old, new in [("Games", "games"), ("Wins", "wins"), ("GF", "gf"), ("GA", "ga")]:
         comparison[f"delta_{new}"] = comparison[new] - comparison[old]
-    legacy_dir = ROOT / "legacy/data"
+    legacy_dir = DATA
     old_korea = pd.read_csv(legacy_dir / "korea_history_from_notebook.csv").set_index("연도").loc[YEARS]
     assert old_korea[["경기", "승", "무", "패", "득점", "실점"]].values.tolist() == korea[
         ["games", "wins", "draws", "losses", "gf", "ga"]

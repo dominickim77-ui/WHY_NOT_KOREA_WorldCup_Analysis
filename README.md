@@ -1,5 +1,7 @@
 # WHY NOT KOREA? 월드컵 데이터 분석
 
+FIFA 월드컵 경기 기록으로 대한민국과 주요 대표팀의 성적을 비교하고, 기사 속 수치를 원본 데이터까지 추적하는 데이터 저널리즘 프로젝트다.
+
 2002·2006·2010·2014·2018·2022년 FIFA 남자 월드컵 본선 384경기를 분석했다. 출전한 62개 대표팀에서 누적 승리 수 상위 10개국을 선정하고 대한민국을 별도로 추가했다. 대한민국은 24경기 7승 6무 11패, 28득점 35실점으로 경기당 1.17득점·1.46실점, 승률 29.2%였다.
 
 | 선정 순서 | 국가 | 경기 | 승 | 득점/경기 | 실점/경기 | 승률 |
@@ -15,6 +17,62 @@
 | 9 | 포르투갈 | 26 | 11 | 1.62 | 1.12 | 42.3% |
 | 10 | 우루과이 | 22 | 10 | 1.27 | 1.09 | 45.5% |
 | 별도 추가 | 대한민국 | 24 | 7 | 1.17 | 1.46 | 29.2% |
+
+## 2026-11-11 실습 결과와 기사 검토
+
+### Chrome에서 기사 비교 열기
+
+**[http://localhost:8501](http://localhost:8501)**
+
+Windows에서 Streamlit 서버를 실행한 PC의 Chrome에서 열 수 있는 주소다. 서버를 종료하면 접속할 수 없다. 선생님 PC에서 보려면 아래 절차로 그 PC에서 서버를 시작한다.
+
+1. 프로젝트 전체를 내려받거나 복사한다. 기사 원본 2개, `reports/article_revision_2026-11-11/`, `charts/`, `data/`, `docs/`를 README와 함께 가져온다.
+2. Windows에 Python 3.12를 준비하고 README가 있는 폴더에서 아래 PowerShell 명령으로 Streamlit을 한 번 설치한다. 의존성은 [requirements-streamlit.txt](requirements-streamlit.txt)에 있다. 처음 설치할 때는 인터넷 연결이 필요하다.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-streamlit.txt
+```
+
+3. [start_worldcup_review.cmd](start_worldcup_review.cmd)를 더블클릭하거나 PowerShell에서 .\start_worldcup_review.cmd를 실행한다. 실행 파일이 같은 폴더의 [worldcup_review_app.py](worldcup_review_app.py)를 시작한다.
+4. 서버 창을 켜 둔 채 Chrome에서 **[http://localhost:8501](http://localhost:8501)**을 연다. 왼쪽에서 기사 1 또는 2를 고른다. **기사 읽기**에서 기존 기사·수정본을 전환하고 선택한 버전을 Markdown으로 다운로드할 수 있다. **수정 전후 비교**에서는 두 버전을 나란히 읽고 바뀐 문장을 확인한다. **분석 그래프 8개**, **팩트체크**, **보고서 · 출처** 탭에서 한글 그래프, 판정과 근거를 볼 수 있다. 앱은 프로젝트 자료를 읽기 전용으로 열며, 검토를 마치면 서버 창에서 Ctrl+C로 종료한다. 이 주소는 외부 공개 URL이 아니다.
+
+### 데이터와 기사 팩트체크
+
+- [경기 원본 CSV](data/matches.csv)에서 2002~2022년 남자 월드컵 본선 6개 대회를 추려 **384경기, 팀·대회 기록 192건, 대표팀 62개국**을 확인했다. 팀·대회 기록은 같은 대표팀이라도 출전한 대회마다 한 건씩 센다. 한글 그래프 8개는 아래 **그래프 8개** 절에서 확인할 수 있다.
+- 검색 증강 생성(RAG) 실습에서는 질문에 맞는 CSV 행을 찾아 근거 ID와 경로·행·열·SHA-256을 제시한다. 현재 대한민국 기록을 조회하며, 범위 밖 질문은 **확인 불가**로 응답한다. 아르헨티나 기록과 최종 성적 단계별 수치는 기사 팩트체크에서 CSV로 직접 재계산했다. [RAG 구현 및 한계](docs/RAG_IMPLEMENTATION.md)
+- 기사 원본 2개와 원본 CSV를 보존하고, 기사 수정본은 별도 폴더에 저장했다. 기사 네 파일은 Windows 줄바꿈을 정규화한 뒤 검증 기록의 SHA-256과 모두 일치했다. [CSV 출처와 해시](data/provenance.json) · [기사 해시와 계산 근거](reports/article_revision_2026-11-11/verification.json)
+
+| 검증 대상 | PASS | FAIL | HOLD | REVIEW | 합계 |
+|---|---:|---:|---:|---:|---:|
+| 최초 기사 원본 2개 | 32 | 4 | 4 | 1 | 41 |
+| 기사 1 수정본 | 14 | 0 | 0 | 0 | 14 |
+| 기사 2 수정본 | 23 | 0 | 0 | 0 | 23 |
+| 수정본 합계 | **37** | **0** | **0** | **0** | **37** |
+
+PASS는 자료와 일치, FAIL은 불일치, HOLD는 근거 부족으로 보류, REVIEW는 표현 검토가 필요한 항목이다. **37건 PASS는 수정본에 남은 검증 대상의 결과**다.
+
+| 기사 | 원본 | 수정본과 주요 변경 |
+|---|---|---|
+| 1. 대한민국의 월드컵 기록 | [원본](article.md) | [수정본](reports/article_revision_2026-11-11/article.revised.md) · 본문은 유지하고 저장 위치에 맞춰 README 상대 링크를 수정했다. |
+| 2. 국가별 득점과 실점 비교 | [원본](WHY_NOT_KOREA_Final_Article.md) | [수정본](reports/article_revision_2026-11-11/WHY_NOT_KOREA_Final_Article.revised.md) · 아르헨티나 20승·64.5%를 18승·58.1%로 수정했다. 16강 48건과 8강 24건을 각각 해당 단계 **탈락** 기록으로 명시하고, 제목을 기록으로 확인할 수 있는 국가 간 비교로 바꿨다. |
+
+원문의 전체 192개 팀·대회 기록에 대한 순위 상관관계 두 주장은 대회별 전체 순위가 없어 본문에서 제외했다. 기존 Kaggle 자료의 URL·버전과 FIFA 공식 자료를 직접 대조했는지는 확인할 수 없었다. 수정본에는 재검증에 실제로 사용한 Fjelstul CSV를 표시했다. 분석 기간은 2002~2022년이고 상대 전력과 전술은 반영하지 않았다. 이 자료로 우승 실패의 원인이나 우승 가능성을 추정하기 어렵다.
+
+[최초 판정](reports/article_factcheck.md) · [수정본 팩트체크 보고서](reports/article_revision_2026-11-11/factcheck_report.md) · [문장별 수정 전후 비교](reports/article_revision_2026-11-11/sentence_comparison.md) · [근거 JSON](reports/article_revision_2026-11-11/verification.json) · [자동 테스트 로그](reports/article_revision_2026-11-11/test_results.txt)
+
+### 검증 재현과 작업 기록
+
+- 프로젝트 폴더에서 아래 명령을 실행한다. **RAG 5/5, 기사 팩트체크 4/4**로 총 9개 테스트가 통과했다. CSV 집계와 그래프를 다시 생성하는 절차는 아래 **VS Code에서 재현**에 있다.
+
+```powershell
+python -B -m unittest discover -s scripts -p 'test_*.py' -v
+```
+
+- README·그래프 PNG·의존성 파일의 Git 충돌을 해결하고 병합 커밋 511c2e1을 완료했다.
+- 분석 코드에서 기존 집계표를 실제 위치인 data/에서 읽도록 경로를 수정했다.
+- 원본 CSV를 보존하고 줄바꿈을 정규화해 출처 해시를 확인했다. 보조 스코어 CSV는 저장된 해시가 Windows 줄바꿈을 포함하므로 체크아웃 시 해당 형식을 유지한다. 대한민국 순위 CSV의 이전 해시와 차이가 생긴 정확한 원인은 확인되지 않았다. [출처와 해시 기록](data/provenance.json)
+- 기사 해시 비교 시 Windows 줄바꿈을 정규화해 동일한 기사 버전을 인식하도록 수정했다. 기사 원문과 수정본을 함께 보존하고 Streamlit에서 변경 문장과 근거를 확인할 수 있게 했다.
 
 ## 데이터와 집계 기준
 
@@ -145,7 +203,7 @@ python -m venv .venv
 3. `worldcup_analysis.ipynb`를 열고 `.venv`의 Python 커널을 선택한 뒤 **Run All**을 실행한다. `data/`에 결과 CSV, `charts/`에 그래프가 생성된다. 분석 실행 중 인터넷 연결은 필요 없다.
 4. Windows에서는 맑은 고딕을 자동 사용한다. 다른 환경에서는 Noto Sans CJK KR, 나눔고딕, AppleGothic 중 하나를 설치하거나 `KOREAN_FONT`에 글꼴 파일 경로를 지정한다.
 
-기존 분석에 쓰인 노트북, 스크립트, 집계표, 문서는 `legacy/`에 참고용으로 보관했다. 제출용 그래프는 최상위 `charts/`에 있으며, 기존 그림과 수업 실습 파일은 원본 ZIP에 있다.
+이전 분석 노트북 [WHY_NOT_KOREA_WorldCup_Analysis.ipynb](WHY_NOT_KOREA_WorldCup_Analysis.ipynb)와 비교용 집계표는 검증 근거로 보관했다. 제출용 그래프는 charts/에 있으며, 기존 그림과 수업 실습 파일은 원본 ZIP에 있다.
 
 실행 결과는 [test_results.txt](test_results.txt), 원본 출처와 파일 해시는 [data/provenance.json](data/provenance.json)에서 확인할 수 있다.
 
