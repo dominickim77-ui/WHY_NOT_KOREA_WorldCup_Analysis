@@ -1,0 +1,94 @@
+[
+  {
+    "question": "대한민국 2002~2022 경기 수 승리 득점 실점 승률",
+    "status": "근거 확인",
+    "answer": "대한민국 2002–2022 경기 수: 24.0경기 [F-KOR-2002–2022-games]\n대한민국 2002–2022 승리: 7.0승 [F-KOR-2002–2022-wins]\n대한민국 2002–2022 득점: 28.0골 [F-KOR-2002–2022-gf]\n대한민국 2002–2022 실점: 35.0골 [F-KOR-2002–2022-ga]\n대한민국 2002–2022 승률: 29.2% [F-KOR-2002–2022-win_rate]",
+    "evidence": [
+      {
+        "id": "F-KOR-2002–2022-games",
+        "metric": "경기 수",
+        "value": 24.0,
+        "unit": "경기",
+        "period": "2002–2022",
+        "source": "data/country_summary.csv",
+        "line": 17,
+        "column": "games",
+        "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+      },
+      {
+        "id": "F-KOR-2002–2022-wins",
+        "metric": "승리",
+        "value": 7.0,
+        "unit": "승",
+        "period": "2002–2022",
+        "source": "data/country_summary.csv",
+        "line": 17,
+        "column": "wins",
+        "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+      },
+      {
+        "id": "F-KOR-2002–2022-gf",
+        "metric": "득점",
+        "value": 28.0,
+        "unit": "골",
+        "period": "2002–2022",
+        "source": "data/country_summary.csv",
+        "line": 17,
+        "column": "gf",
+        "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+      },
+      {
+        "id": "F-KOR-2002–2022-ga",
+        "metric": "실점",
+        "value": 35.0,
+        "unit": "골",
+        "period": "2002–2022",
+        "source": "data/country_summary.csv",
+        "line": 17,
+        "column": "ga",
+        "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+      },
+      {
+        "id": "F-KOR-2002–2022-win_rate",
+        "metric": "승률",
+        "value": 29.166666666666668,
+        "unit": "%",
+        "period": "2002–2022",
+        "source": "data/country_summary.csv",
+        "line": 17,
+        "column": "win_rate",
+        "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+      }
+    ]
+  },
+  {
+    "question": "한국 2018 순위",
+    "status": "근거 확인",
+    "answer": "대한민국 2018 최종 순위: 19.0위 [F-KOR-2018-position]",
+    "evidence": [
+      {
+        "id": "F-KOR-2018-position",
+        "metric": "최종 순위",
+        "value": 19.0,
+        "unit": "위",
+        "period": "2018",
+        "source": "data/korea_summary.csv",
+        "line": 6,
+        "column": "position",
+        "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+      }
+    ]
+  },
+  {
+    "question": "한국 2026 경기 수",
+    "status": "확인 불가",
+    "answer": "확인 불가: 자료 범위는 2002·2006·2010·2014·2018·2022년입니다.",
+    "evidence": []
+  },
+  {
+    "question": "한국이 우승하지 못한 전술적 원인은?",
+    "status": "확인 불가",
+    "answer": "확인 불가: 전술·원인·예측을 뒷받침할 근거가 없습니다.",
+    "evidence": []
+  }
+]

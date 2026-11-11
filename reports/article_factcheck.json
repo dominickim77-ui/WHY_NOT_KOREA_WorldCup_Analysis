@@ -1,0 +1,3339 @@
+{
+  "scope": "2002~2022 FIFA 남자 월드컵 본선 6개 대회 · 384경기 · 팀·대회 기록 192건",
+  "sentence_count": 41,
+  "counts": {
+    "PASS": 32,
+    "FAIL": 4,
+    "HOLD": 4,
+    "REVIEW": 1
+  },
+  "article_sha256": {
+    "article.md": "82440a588a4c5ee376966115cc59fe487a7c72d305eeb93cc7627e2a90599020",
+    "WHY_NOT_KOREA_Final_Article.md": "01cf3bd45e86d09a9be4360a24acb2236cd9f9e917578cfb22bfe59f917022cf"
+  },
+  "instructions_sha256": "0b682119e78aca1e3e8f24ed519980afb4d792cf06ba89ff64db2542ef5c47c2",
+  "results": [
+    {
+      "article": "article.md",
+      "line": 1,
+      "sentence": "# 대한민국의 월드컵 24경기, 7승과 35실점",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR games",
+          "claimed": 24,
+          "observed": 24,
+          "displayed": 24,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-games",
+            "F-KOR-2002–2022-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR wins",
+          "claimed": 7,
+          "observed": 7,
+          "displayed": 7,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-wins",
+            "F-KOR-2002–2022-wins",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR ga",
+          "claimed": 35,
+          "observed": 35,
+          "displayed": 35,
+          "matches": true,
+          "calculation": "팀 실점 합계",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-ga",
+            "F-KOR-2002–2022-ga",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 3,
+      "sentence": "2002년부터 2022년까지 남자 월드컵 본선 6개 대회에서 대한민국은 24경기 중 7경기를 이겼다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR games",
+          "claimed": 24,
+          "observed": 24,
+          "displayed": 24,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-games",
+            "F-KOR-2002–2022-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR wins",
+          "claimed": 7,
+          "observed": 7,
+          "displayed": 7,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-wins",
+            "F-KOR-2002–2022-wins",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 3,
+      "sentence": "28골을 넣고 35골을 내줬다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 KOR gf",
+          "claimed": 28,
+          "observed": 28,
+          "displayed": 28,
+          "matches": true,
+          "calculation": "팀 득점 합계",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-gf",
+            "F-KOR-2002–2022-gf",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR ga",
+          "claimed": 35,
+          "observed": 35,
+          "displayed": 35,
+          "matches": true,
+          "calculation": "팀 실점 합계",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-ga",
+            "F-KOR-2002–2022-ga",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 3,
+      "sentence": "승률은 29.2%였다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 KOR win_rate",
+          "claimed": 29.2,
+          "observed": 29.166666666666668,
+          "displayed": 29.2,
+          "matches": true,
+          "calculation": "승리 수 ÷ 경기 수 × 100",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-win_rate",
+            "F-KOR-2002–2022-win_rate",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 3,
+      "sentence": "연장 종료 때 동점인 경기는 무승부로 집계했다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "승부차기 경기의 경기 스코어",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "정규·연장 동점은 무승부로 집계. 승부차기 득점 및 결과는 별도",
+          "evidence": [
+            "M-all"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 5,
+      "sentence": "6개 대회의 누적 승수 상위 10개국과 비교하면 대한민국은 경기당 득점(1.17골)이 가장 적고 실점(1.46골)이 가장 많았다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        },
+        {
+          "metric": "누적 승수 상위 10개국 및 한국",
+          "claimed": [
+            "DEU",
+            "BRA",
+            "FRA",
+            "ARG",
+            "NLD",
+            "ESP",
+            "ENG",
+            "BEL",
+            "PRT",
+            "URY",
+            "KOR"
+          ],
+          "observed": [
+            "DEU",
+            "BRA",
+            "FRA",
+            "ARG",
+            "NLD",
+            "ESP",
+            "ENG",
+            "BEL",
+            "PRT",
+            "URY",
+            "KOR"
+          ],
+          "displayed": [
+            "DEU",
+            "BRA",
+            "FRA",
+            "ARG",
+            "NLD",
+            "ESP",
+            "ENG",
+            "BEL",
+            "PRT",
+            "URY",
+            "KOR"
+          ],
+          "matches": true,
+          "calculation": "승수→득실차→득점 내림차순, 국가 코드 오름차순으로 10개국 선별 후 한국 추가",
+          "evidence": [
+            "M-all",
+            "S-top10"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR scored",
+          "claimed": 1.17,
+          "observed": 1.1666666666666667,
+          "displayed": 1.17,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-scored",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR conceded",
+          "claimed": 1.46,
+          "observed": 1.4583333333333333,
+          "displayed": 1.46,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-conceded",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "scored 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "DEU, BRA, FRA, ARG, NLD, ESP, ENG, BEL, PRT, URY, KOR의 총득점 ÷ 경기 수 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        },
+        {
+          "metric": "conceded 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "DEU, BRA, FRA, ARG, NLD, ESP, ENG, BEL, PRT, URY, KOR의 총실점 ÷ 경기 수 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 5,
+      "sentence": "독일과 브라질은 각각 23승을 거뒀다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 DEU wins",
+          "claimed": 23,
+          "observed": 23,
+          "displayed": 23,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-DEU-2002–2022",
+            "S-country_summary-DEU-None-wins",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 BRA wins",
+          "claimed": 23,
+          "observed": 23,
+          "displayed": 23,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-BRA-2002–2022",
+            "S-country_summary-BRA-None-wins",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 5,
+      "sentence": "16승을 거둔 네덜란드는 23경기를 치러, 비교 대상 중 승률이 가장 높았다(69.6%).",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "누적 승수 상위 10개국 및 한국",
+          "claimed": [
+            "DEU",
+            "BRA",
+            "FRA",
+            "ARG",
+            "NLD",
+            "ESP",
+            "ENG",
+            "BEL",
+            "PRT",
+            "URY",
+            "KOR"
+          ],
+          "observed": [
+            "DEU",
+            "BRA",
+            "FRA",
+            "ARG",
+            "NLD",
+            "ESP",
+            "ENG",
+            "BEL",
+            "PRT",
+            "URY",
+            "KOR"
+          ],
+          "displayed": [
+            "DEU",
+            "BRA",
+            "FRA",
+            "ARG",
+            "NLD",
+            "ESP",
+            "ENG",
+            "BEL",
+            "PRT",
+            "URY",
+            "KOR"
+          ],
+          "matches": true,
+          "calculation": "승수→득실차→득점 내림차순, 국가 코드 오름차순으로 10개국 선별 후 한국 추가",
+          "evidence": [
+            "M-all",
+            "S-top10"
+          ]
+        },
+        {
+          "metric": "2002–2022 NLD wins",
+          "claimed": 16,
+          "observed": 16,
+          "displayed": 16,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-NLD-2002–2022",
+            "S-country_summary-NLD-None-wins"
+          ]
+        },
+        {
+          "metric": "2002–2022 NLD games",
+          "claimed": 23,
+          "observed": 23,
+          "displayed": 23,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-NLD-2002–2022",
+            "S-country_summary-NLD-None-games"
+          ]
+        },
+        {
+          "metric": "2002–2022 NLD win_rate",
+          "claimed": 69.6,
+          "observed": 69.56521739130434,
+          "displayed": 69.6,
+          "matches": true,
+          "calculation": "승리 수 ÷ 경기 수 × 100",
+          "evidence": [
+            "M-NLD-2002–2022",
+            "S-country_summary-NLD-None-win_rate"
+          ]
+        },
+        {
+          "metric": "win_rate 비교 집단 극값",
+          "claimed": "NLD",
+          "observed": "NLD",
+          "displayed": "NLD",
+          "matches": true,
+          "calculation": "DEU, BRA, FRA, ARG, NLD, ESP, ENG, BEL, PRT, URY, KOR의 승리 수 ÷ 경기 수 × 100 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 7,
+      "sentence": "대한민국의 최고 성적은 2002년 4위였다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "한국 분석 기간 최고 성적",
+          "claimed": [
+            2002,
+            4
+          ],
+          "observed": [
+            2002,
+            4
+          ],
+          "displayed": [
+            2002,
+            4
+          ],
+          "matches": true,
+          "calculation": "한국의 6개 대회 최종 순위 최솟값 및 상위 4위 CSV 대조",
+          "evidence": [
+            "R-KOR-annual",
+            "R-KOR",
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "2002~2022년 6개 대회 중 대한민국의 최고 성적은 2002년 4위였다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 7,
+      "sentence": "당시 경기당 0.86골을 내줬다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002 KOR conceded",
+          "claimed": 0.86,
+          "observed": 0.8571428571428571,
+          "displayed": 0.86,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-conceded",
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 7,
+      "sentence": "대한민국의 6개 대회 합산 평균(1.46골)보다 낮았고, 같은 기간 6개 우승팀 평균(0.62골)보다는 높았다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "우승팀 수",
+          "claimed": 6,
+          "observed": 6,
+          "displayed": 6,
+          "matches": true,
+          "calculation": "대회별 최종 순위 1위",
+          "evidence": [
+            "R-champions",
+            "M-champions"
+          ]
+        },
+        {
+          "metric": "우승팀 경기당 실점",
+          "claimed": 0.62,
+          "observed": 0.6190476190476191,
+          "displayed": 0.62,
+          "matches": true,
+          "calculation": "6개 우승팀 실점 합 ÷ 경기 합",
+          "evidence": [
+            "R-champions",
+            "M-champions"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR conceded",
+          "claimed": 1.46,
+          "observed": 1.4583333333333333,
+          "displayed": 1.46,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-conceded",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002 실점률 < 한국 전체",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "반올림 전 두 값 비교",
+          "evidence": [
+            "M-KOR-2002",
+            "M-KOR-2002–2022"
+          ]
+        },
+        {
+          "metric": "2002 실점률 > 우승팀 평균",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "반올림 전 두 값 비교",
+          "evidence": [
+            "M-KOR-2002",
+            "M-KOR-2002–2022",
+            "R-champions",
+            "M-champions"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 7,
+      "sentence": "2002년 대한민국은 경기당 1.14골을 넣었고, 우승팀 평균은 2.02골이었다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002 KOR scored",
+          "claimed": 1.14,
+          "observed": 1.1428571428571428,
+          "displayed": 1.14,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-scored",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "우승팀 경기당 득점",
+          "claimed": 2.02,
+          "observed": 2.0238095238095237,
+          "displayed": 2.02,
+          "matches": true,
+          "calculation": "6개 우승팀 득점 합 ÷ 경기 합",
+          "evidence": [
+            "R-champions",
+            "M-champions"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 9,
+      "sentence": "6개 대회의 기록으로 우승 가능성이나 특정 전략의 효과를 추정하기는 어렵다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "article.md",
+      "line": 11,
+      "sentence": "자료는 Fjelstul World Cup Database의 본선 경기 기록이며 집계 방식과 교차 검증 내역은 [README](README.md)에 있다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "경기 CSV 계보",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "data/provenance.json의 출처 및 SHA-256 확인",
+          "evidence": [
+            "M-all"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 1,
+      "sentence": "# 한국은 왜 월드컵에서 우승하지 못했을까…기록만으로 원인을 단정할 수는 없다",
+      "status": "REVIEW",
+      "checks": [],
+      "suggestion": "2002~2022 월드컵에서 한국의 득점·실점은 비교 국가와 어떻게 달랐나",
+      "reason": "인과 프레이밍 검토"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 3,
+      "sentence": "## 2002~2022년 24경기에서 7승…비교 대상 국가보다 경기당 득점은 적고 실점은 많았다",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR games",
+          "claimed": 24,
+          "observed": 24,
+          "displayed": 24,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-games",
+            "F-KOR-2002–2022-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR wins",
+          "claimed": 7,
+          "observed": 7,
+          "displayed": 7,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-wins",
+            "F-KOR-2002–2022-wins",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "scored 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "KOR, ARG, BRA, DEU의 총득점 ÷ 경기 수 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        },
+        {
+          "metric": "conceded 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "KOR, ARG, BRA, DEU의 총실점 ÷ 경기 수 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 7,
+      "sentence": "### 비교 대상 국가보다 낮은 승률",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "win_rate 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "KOR, ARG, BRA, DEU의 승리 수 ÷ 경기 수 × 100 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 9,
+      "sentence": "2002~2022년 월드컵에서 한국은 24경기 중 7승을 거뒀다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR games",
+          "claimed": 24,
+          "observed": 24,
+          "displayed": 24,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-games",
+            "F-KOR-2002–2022-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR wins",
+          "claimed": 7,
+          "observed": 7,
+          "displayed": 7,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-wins",
+            "F-KOR-2002–2022-wins",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 9,
+      "sentence": "28골을 넣고 35골을 내줬으며, 경기당 득점은 1.17골, 실점은 1.46골이다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 KOR gf",
+          "claimed": 28,
+          "observed": 28,
+          "displayed": 28,
+          "matches": true,
+          "calculation": "팀 득점 합계",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-gf",
+            "F-KOR-2002–2022-gf",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR ga",
+          "claimed": 35,
+          "observed": 35,
+          "displayed": 35,
+          "matches": true,
+          "calculation": "팀 실점 합계",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-ga",
+            "F-KOR-2002–2022-ga",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR scored",
+          "claimed": 1.17,
+          "observed": 1.1666666666666667,
+          "displayed": 1.17,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-scored",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR conceded",
+          "claimed": 1.46,
+          "observed": 1.4583333333333333,
+          "displayed": 1.46,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-conceded",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 11,
+      "sentence": "비교 대상 국가의 경기당 득점은 아르헨티나 1.68골, 브라질 1.88골, 독일 2.06골이다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 ARG scored",
+          "claimed": 1.68,
+          "observed": 1.6774193548387097,
+          "displayed": 1.68,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-ARG-2002–2022",
+            "S-country_summary-ARG-None-scored",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 BRA scored",
+          "claimed": 1.88,
+          "observed": 1.8823529411764706,
+          "displayed": 1.88,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-BRA-2002–2022",
+            "S-country_summary-BRA-None-scored",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 DEU scored",
+          "claimed": 2.06,
+          "observed": 2.0588235294117645,
+          "displayed": 2.06,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-DEU-2002–2022",
+            "S-country_summary-DEU-None-scored",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 11,
+      "sentence": "경기당 실점은 아르헨티나 1.03골, 브라질 0.88골, 독일 0.79골이었다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 ARG conceded",
+          "claimed": 1.03,
+          "observed": 1.032258064516129,
+          "displayed": 1.03,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-ARG-2002–2022",
+            "S-country_summary-ARG-None-conceded",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 BRA conceded",
+          "claimed": 0.88,
+          "observed": 0.8823529411764706,
+          "displayed": 0.88,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-BRA-2002–2022",
+            "S-country_summary-BRA-None-conceded",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 DEU conceded",
+          "claimed": 0.79,
+          "observed": 0.7941176470588235,
+          "displayed": 0.79,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-DEU-2002–2022",
+            "S-country_summary-DEU-None-conceded",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 11,
+      "sentence": "승률은 브라질과 독일이 각각 67.6%, 아르헨티나가 64.5%였고, 한국은 29.2%였다.",
+      "status": "FAIL",
+      "checks": [
+        {
+          "metric": "2002–2022 KOR win_rate",
+          "claimed": 29.2,
+          "observed": 29.166666666666668,
+          "displayed": 29.2,
+          "matches": true,
+          "calculation": "승리 수 ÷ 경기 수 × 100",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-win_rate",
+            "F-KOR-2002–2022-win_rate",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 ARG win_rate",
+          "claimed": 64.5,
+          "observed": 58.064516129032256,
+          "displayed": 58.1,
+          "matches": false,
+          "calculation": "승리 수 ÷ 경기 수 × 100",
+          "evidence": [
+            "M-ARG-2002–2022",
+            "S-country_summary-ARG-None-win_rate",
+            "S-ARG-legacy",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 BRA win_rate",
+          "claimed": 67.6,
+          "observed": 67.6470588235294,
+          "displayed": 67.6,
+          "matches": true,
+          "calculation": "승리 수 ÷ 경기 수 × 100",
+          "evidence": [
+            "M-BRA-2002–2022",
+            "S-country_summary-BRA-None-win_rate",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 DEU win_rate",
+          "claimed": 67.6,
+          "observed": 67.6470588235294,
+          "displayed": 67.6,
+          "matches": true,
+          "calculation": "승리 수 ÷ 경기 수 × 100",
+          "evidence": [
+            "M-DEU-2002–2022",
+            "S-country_summary-DEU-None-win_rate",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "승률은 브라질과 독일이 각각 67.6%, 아르헨티나가 58.1%, 한국이 29.2%였다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 11,
+      "sentence": "브라질과 독일은 각각 34경기에서 23승, 아르헨티나는 31경기에서 20승을 기록했다.",
+      "status": "FAIL",
+      "checks": [
+        {
+          "metric": "2002–2022 DEU wins",
+          "claimed": 23,
+          "observed": 23,
+          "displayed": 23,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-DEU-2002–2022",
+            "S-country_summary-DEU-None-wins",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 BRA wins",
+          "claimed": 23,
+          "observed": 23,
+          "displayed": 23,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-BRA-2002–2022",
+            "S-country_summary-BRA-None-wins",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 ARG games",
+          "claimed": 31,
+          "observed": 31,
+          "displayed": 31,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-ARG-2002–2022",
+            "S-country_summary-ARG-None-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 BRA games",
+          "claimed": 34,
+          "observed": 34,
+          "displayed": 34,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-BRA-2002–2022",
+            "S-country_summary-BRA-None-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 DEU games",
+          "claimed": 34,
+          "observed": 34,
+          "displayed": 34,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-DEU-2002–2022",
+            "S-country_summary-DEU-None-games",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002–2022 ARG wins",
+          "claimed": 20,
+          "observed": 18,
+          "displayed": 18,
+          "matches": false,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-ARG-2002–2022",
+            "S-country_summary-ARG-None-wins",
+            "S-ARG-legacy",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "브라질과 독일은 각각 34경기에서 23승, 아르헨티나는 31경기에서 18승을 기록했다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 13,
+      "sentence": "국가별 경기 수가 다르므로 총득점이나 총승수만 비교하기보다 경기당 기록과 승률을 함께 볼 필요가 있다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "국가별 경기 수 차이",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "네 나라 경기 수의 고유값 개수 비교",
+          "evidence": [
+            "M-all"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 13,
+      "sentence": "이 수치에서는 한국이 비교 대상 국가들보다 경기당 득점은 적고 실점은 많았다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "scored 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "KOR, ARG, BRA, DEU의 총득점 ÷ 경기 수 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        },
+        {
+          "metric": "conceded 비교 집단 극값",
+          "claimed": "KOR",
+          "observed": "KOR",
+          "displayed": "KOR",
+          "matches": true,
+          "calculation": "KOR, ARG, BRA, DEU의 총실점 ÷ 경기 수 비교",
+          "evidence": [
+            "M-all",
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 13,
+      "sentence": "승수는 승부차기 결과를 별도 승리로 계산하지 않은 데이터셋 기준이다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "승부차기 경기의 경기 스코어",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "정규·연장 동점은 무승부로 집계. 승부차기 득점 및 결과는 별도",
+          "evidence": [
+            "M-all"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 15,
+      "sentence": "### 2002년은 한국의 최고 성적",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "한국 분석 기간 최고 성적",
+          "claimed": [
+            2002,
+            4
+          ],
+          "observed": [
+            2002,
+            4
+          ],
+          "displayed": [
+            2002,
+            4
+          ],
+          "matches": true,
+          "calculation": "한국의 6개 대회 최종 순위 최솟값 및 상위 4위 CSV 대조",
+          "evidence": [
+            "R-KOR-annual",
+            "R-KOR",
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 17,
+      "sentence": "한국의 분석 기간 중 최고 성적은 2002년 4위다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "한국 분석 기간 최고 성적",
+          "claimed": [
+            2002,
+            4
+          ],
+          "observed": [
+            2002,
+            4
+          ],
+          "displayed": [
+            2002,
+            4
+          ],
+          "matches": true,
+          "calculation": "한국의 6개 대회 최종 순위 최솟값 및 상위 4위 CSV 대조",
+          "evidence": [
+            "R-KOR-annual",
+            "R-KOR",
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 17,
+      "sentence": "당시 7경기에서 3승 2무 2패를 기록했고, 8득점 6실점을 했다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002 KOR games",
+          "claimed": 7,
+          "observed": 7,
+          "displayed": 7,
+          "matches": true,
+          "calculation": "경기 행 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-games",
+            "F-KOR-2002-games",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002 KOR wins",
+          "claimed": 3,
+          "observed": 3,
+          "displayed": 3,
+          "matches": true,
+          "calculation": "정규·연장 스코어 득점 > 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-wins",
+            "F-KOR-2002-wins",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002 KOR draws",
+          "claimed": 2,
+          "observed": 2,
+          "displayed": 2,
+          "matches": true,
+          "calculation": "득점 = 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-draws",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002 KOR losses",
+          "claimed": 2,
+          "observed": 2,
+          "displayed": 2,
+          "matches": true,
+          "calculation": "득점 < 실점인 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-losses",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002 KOR gf",
+          "claimed": 8,
+          "observed": 8,
+          "displayed": 8,
+          "matches": true,
+          "calculation": "팀 득점 합계",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-gf",
+            "F-KOR-2002-gf",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002 KOR ga",
+          "claimed": 6,
+          "observed": 6,
+          "displayed": 6,
+          "matches": true,
+          "calculation": "팀 실점 합계",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-ga",
+            "F-KOR-2002-ga",
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 17,
+      "sentence": "경기당 득점은 1.14골, 실점은 0.86골이었다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002 KOR scored",
+          "claimed": 1.14,
+          "observed": 1.1428571428571428,
+          "displayed": 1.14,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-scored",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002 KOR conceded",
+          "claimed": 0.86,
+          "observed": 0.8571428571428571,
+          "displayed": 0.86,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-conceded",
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 19,
+      "sentence": "2002년 한국의 경기당 득점은 2002~2022년 한국 전체 평균인 1.17골보다 낮았다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002–2022 KOR scored",
+          "claimed": 1.17,
+          "observed": 1.1666666666666667,
+          "displayed": 1.17,
+          "matches": true,
+          "calculation": "총득점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-scored",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002 득점률 < 한국 전체",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "반올림 전 두 값 비교",
+          "evidence": [
+            "M-KOR-2002",
+            "M-KOR-2002–2022"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 19,
+      "sentence": "경기당 실점 0.86골도 같은 기간 한국 전체 평균인 1.46골과 비교하면 낮은 수치다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "2002 KOR conceded",
+          "claimed": 0.86,
+          "observed": 0.8571428571428571,
+          "displayed": 0.86,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002",
+            "S-korea_summary-KOR-2002-conceded",
+            "FS-대한민국 대회별 성적"
+          ]
+        },
+        {
+          "metric": "2002–2022 KOR conceded",
+          "claimed": 1.46,
+          "observed": 1.4583333333333333,
+          "displayed": 1.46,
+          "matches": true,
+          "calculation": "총실점 ÷ 경기 수",
+          "evidence": [
+            "M-KOR-2002–2022",
+            "S-country_summary-KOR-None-conceded",
+            "FS-국가별 비교"
+          ]
+        },
+        {
+          "metric": "2002 실점률 < 한국 전체",
+          "claimed": true,
+          "observed": true,
+          "displayed": true,
+          "matches": true,
+          "calculation": "반올림 전 두 값 비교",
+          "evidence": [
+            "M-KOR-2002",
+            "M-KOR-2002–2022"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 19,
+      "sentence": "한 차례의 4강 진출 기록만으로 이후 대회의 성적이나 우승 가능성을 설명할 수는 없다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "한국 4강 기록 수",
+          "claimed": 1,
+          "observed": 1,
+          "displayed": 1,
+          "matches": true,
+          "calculation": "한국 최종 순위 1~4위 기록 수",
+          "evidence": [
+            "R-KOR-annual"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 23,
+      "sentence": "최종 성적 단계별 자료에는 조별리그 탈락 팀 96개, 16강 진출 팀 48개, 8강 진출 팀 24개, 4강 진출 팀 24개가 제시돼 있다.",
+      "status": "FAIL",
+      "checks": [
+        {
+          "metric": "조별리그 탈락",
+          "claimed": 96,
+          "observed": 96,
+          "displayed": 96,
+          "matches": true,
+          "calculation": "3경기를 치른 팀·대회 기록 수",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "16강 탈락",
+          "claimed": 48,
+          "observed": 48,
+          "displayed": 48,
+          "matches": true,
+          "calculation": "4경기를 치른 팀·대회 기록 수",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "8강 탈락",
+          "claimed": 24,
+          "observed": 24,
+          "displayed": 24,
+          "matches": true,
+          "calculation": "5경기를 치른 팀·대회 기록 수",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "4강 진출",
+          "claimed": 24,
+          "observed": 24,
+          "displayed": 24,
+          "matches": true,
+          "calculation": "7경기를 치른 팀·대회 기록 수",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "16강·8강 비교 집단",
+          "claimed": "진출 팀 전체",
+          "observed": "각 단계 탈락 팀",
+          "displayed": "각 단계 탈락 팀",
+          "matches": false,
+          "calculation": "원고 집단 명칭과 중복 없는 최종 성적 분류 대조",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        }
+      ],
+      "suggestion": "팀·대회 기록은 조별리그 탈락 96건, 16강 탈락 48건, 8강 탈락 24건, 4강 진출 24건이다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 23,
+      "sentence": "조별리그 탈락 팀의 평균은 경기당 0.826득점·1.694실점, 8강 진출 팀은 1.642득점·0.808실점, 16강 진출 팀은 1.240득점·1.255실점, 4강 진출 팀은 1.738득점·0.827실점이다.",
+      "status": "FAIL",
+      "checks": [
+        {
+          "metric": "조별리그 탈락 scored",
+          "claimed": 0.826,
+          "observed": 0.8263888888888888,
+          "displayed": 0.826,
+          "matches": true,
+          "calculation": "팀·대회별 총득점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "조별리그 탈락 conceded",
+          "claimed": 1.694,
+          "observed": 1.6944444444444444,
+          "displayed": 1.694,
+          "matches": true,
+          "calculation": "팀·대회별 총실점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "16강 탈락 scored",
+          "claimed": 1.24,
+          "observed": 1.2395833333333333,
+          "displayed": 1.24,
+          "matches": true,
+          "calculation": "팀·대회별 총득점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "16강 탈락 conceded",
+          "claimed": 1.255,
+          "observed": 1.2552083333333333,
+          "displayed": 1.255,
+          "matches": true,
+          "calculation": "팀·대회별 총실점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "8강 탈락 scored",
+          "claimed": 1.642,
+          "observed": 1.6416666666666666,
+          "displayed": 1.642,
+          "matches": true,
+          "calculation": "팀·대회별 총득점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "8강 탈락 conceded",
+          "claimed": 0.808,
+          "observed": 0.8083333333333333,
+          "displayed": 0.808,
+          "matches": true,
+          "calculation": "팀·대회별 총실점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "4강 진출 scored",
+          "claimed": 1.738,
+          "observed": 1.7380952380952381,
+          "displayed": 1.738,
+          "matches": true,
+          "calculation": "팀·대회별 총득점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "4강 진출 conceded",
+          "claimed": 0.827,
+          "observed": 0.8273809523809523,
+          "displayed": 0.827,
+          "matches": true,
+          "calculation": "팀·대회별 총실점 ÷ 경기 수의 산술평균",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        },
+        {
+          "metric": "16강·8강 비교 집단",
+          "claimed": "진출 팀 전체",
+          "observed": "각 단계 탈락 팀",
+          "displayed": "각 단계 탈락 팀",
+          "matches": false,
+          "calculation": "원고 집단 명칭과 중복 없는 최종 성적 분류 대조",
+          "evidence": [
+            "M-all",
+            "FS-최종 성적별 비교"
+          ]
+        }
+      ],
+      "suggestion": "조별리그 탈락 팀은 경기당 0.826득점·1.694실점, 8강 탈락 팀은 1.642득점·0.808실점, 16강 탈락 팀은 1.240득점·1.255실점, 4강 진출 팀은 1.738득점·0.827실점이었다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 25,
+      "sentence": "상관관계 분석에서 순위 숫자가 낮을수록 좋은 성적이라는 점을 전제로, 순위와 경기당 득점은 음의 상관관계(-0.678), 순위와 경기당 실점은 양의 상관관계(0.637)를 보였다.",
+      "status": "HOLD",
+      "checks": [
+        {
+          "metric": "192개 팀·대회 순위 × scored",
+          "claimed": -0.678,
+          "observed": null,
+          "displayed": null,
+          "matches": null,
+          "calculation": "저장 Fact Sheet 수치는 확인. 순위 CSV는 대회별 1~4위만 있어 전체 피어슨 계수 재계산 불가",
+          "evidence": [
+            "M-all",
+            "R-podium",
+            "FS-상관관계"
+          ]
+        },
+        {
+          "metric": "192개 팀·대회 순위 × conceded",
+          "claimed": 0.637,
+          "observed": null,
+          "displayed": null,
+          "matches": null,
+          "calculation": "저장 Fact Sheet 수치는 확인. 순위 CSV는 대회별 1~4위만 있어 전체 피어슨 계수 재계산 불가",
+          "evidence": [
+            "M-all",
+            "R-podium",
+            "FS-상관관계"
+          ]
+        }
+      ],
+      "suggestion": "192개 팀·대회의 최종 순위를 확보해 상관계수를 재계산할 때까지 수치 인용을 보류한다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 25,
+      "sentence": "득점이 많거나 실점이 적은 경우 더 좋은 순위와 함께 나타나는 경향이 있었지만, 상관관계가 인과관계를 증명하는 것은 아니다.",
+      "status": "HOLD",
+      "checks": [
+        {
+          "metric": "192개 팀·대회 순위 × scored 방향",
+          "claimed": false,
+          "observed": null,
+          "displayed": null,
+          "matches": null,
+          "calculation": "저장 Fact Sheet 수치는 확인. 순위 CSV는 대회별 1~4위만 있어 전체 피어슨 계수 재계산 불가",
+          "evidence": [
+            "M-all",
+            "R-podium",
+            "FS-상관관계"
+          ]
+        },
+        {
+          "metric": "192개 팀·대회 순위 × conceded 방향",
+          "claimed": true,
+          "observed": null,
+          "displayed": null,
+          "matches": null,
+          "calculation": "저장 Fact Sheet 수치는 확인. 순위 CSV는 대회별 1~4위만 있어 전체 피어슨 계수 재계산 불가",
+          "evidence": [
+            "M-all",
+            "R-podium",
+            "FS-상관관계"
+          ]
+        }
+      ],
+      "suggestion": "전체 최종 순위를 확보해 상관관계의 방향을 확인한 뒤 서술한다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 29,
+      "sentence": "**출처:** Kaggle FIFA World Cup Dataset",
+      "status": "HOLD",
+      "checks": [
+        {
+          "metric": "원래 Kaggle 데이터셋 식별",
+          "claimed": "원본 URL 및 버전",
+          "observed": null,
+          "displayed": null,
+          "matches": null,
+          "calculation": "저장된 Fact Sheet에 출처 명칭만 있고 원본 URL과 버전을 확인할 근거 없음",
+          "evidence": [
+            "FS-대한민국 대회별 성적",
+            "FS-국가별 비교",
+            "FS-최종 성적별 비교",
+            "FS-상관관계"
+          ]
+        }
+      ],
+      "suggestion": "Kaggle 원본 URL과 버전을 확인한 뒤 명시한다. 개별 경기 재검증 출처는 Fjelstul World Cup Database로 표기한다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 30,
+      "sentence": "**분석 기간:** 2002~2022년",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "남자 월드컵 본선 대회 연도",
+          "claimed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "observed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "displayed": [
+            2002,
+            2006,
+            2010,
+            2014,
+            2018,
+            2022
+          ],
+          "matches": true,
+          "calculation": "본선 대회 ID 및 연도 검색",
+          "evidence": [
+            "T-period"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 32,
+      "sentence": "자료는 개별 경기 기록이 아닌 국가별 대회 집계 자료로, 상대팀 수준과 전술은 반영하지 않는다.",
+      "status": "PASS",
+      "checks": [
+        {
+          "metric": "원고가 사용한 자료의 단위",
+          "claimed": "팀·대회 집계",
+          "observed": "팀·대회 집계",
+          "displayed": "팀·대회 집계",
+          "matches": true,
+          "calculation": "노트북 저장 Fact Sheet의 대한민국 대회별 성적과 비교 표 구조 확인",
+          "evidence": [
+            "FS-대한민국 대회별 성적",
+            "FS-국가별 비교"
+          ]
+        }
+      ],
+      "suggestion": "",
+      "reason": "CSV 재계산과 기사 값 대조"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 32,
+      "sentence": "FIFA 공식 자료와의 독립 대조는 아직 완료되지 않았다.",
+      "status": "HOLD",
+      "checks": [
+        {
+          "metric": "FIFA 공식 자료 독립 대조",
+          "claimed": "완료 여부",
+          "observed": null,
+          "displayed": null,
+          "matches": null,
+          "calculation": "노트북의 당시 한계는 확인. 현재 공식 자료 대조는 이 실행 범위 밖",
+          "evidence": [
+            "FS-대한민국 대회별 성적"
+          ]
+        }
+      ],
+      "suggestion": "이번 팩트체크는 Fjelstul 경기·순위 CSV로 재계산했다. FIFA 공식 자료와의 대조 여부는 확인이 필요하다.",
+      "reason": "CSV 재계산과 기사 값 대조"
+    }
+  ],
+  "excluded": [
+    {
+      "article": "article.md",
+      "line": 9,
+      "sentence": "이 비교는 결과로 기록된 득실을 보여준다."
+    },
+    {
+      "article": "article.md",
+      "line": 9,
+      "sentence": "상대 전력과 대진, 개최지, 전술의 효과는 따로 계산하지 않았다."
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 5,
+      "sentence": "한국의 기록은 성적과 함께 나타난 지표를 보여줄 뿐, 우승하지 못한 원인을 단독으로 설명하지는 않는다."
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 13,
+      "sentence": "다만 이 차이만으로 우승하지 못한 원인을 단정할 수는 없다."
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 21,
+      "sentence": "### 성적 단계별 평균과 상관관계"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 23,
+      "sentence": "각 참가팀의 경기당 득점과 경기당 실점을 먼저 계산한 뒤, 그 값을 성적 단계별로 평균 낸 결과다."
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 27,
+      "sentence": "### 데이터 출처와 분석 한계"
+    },
+    {
+      "article": "WHY_NOT_KOREA_Final_Article.md",
+      "line": 32,
+      "sentence": "상관관계는 원인을 증명하지 않는다."
+    }
+  ],
+  "evidence": {
+    "F-KOR-2002-ga": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "ga"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "F-KOR-2002-games": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "F-KOR-2002-gf": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "gf"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "F-KOR-2002-wins": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "F-KOR-2002–2022-ga": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "ga"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "F-KOR-2002–2022-games": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "F-KOR-2002–2022-gf": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "gf"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "F-KOR-2002–2022-win_rate": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "win_rate"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "F-KOR-2002–2022-wins": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "FS-국가별 비교": {
+      "path": "WHY_NOT_KOREA_WorldCup_Analysis.ipynb",
+      "cell_index": 18,
+      "sha256": "fcc3e370e12db87c7e32f4bd33890492893180915ddf98b0ed0593f3c2b37c30",
+      "excerpt": "[국가별 비교]\n             Games  Wins  Goals  Conceded  Win Rate (%)  Goals Per Game  Conceded Per Game\nCountry                                                                                   \nArgentina       31    20     52        32        64.516           1.677              1.032\nBrazil          34    23     64        30        67.647           1.882              0.882\nGermany         34    23     70        27        67.647           2.059              0.794\nSouth Korea     24     7     28        35        29.167           1.167              1.458"
+    },
+    "FS-대한민국 대회별 성적": {
+      "path": "WHY_NOT_KOREA_WorldCup_Analysis.ipynb",
+      "cell_index": 18,
+      "sha256": "fcc3e370e12db87c7e32f4bd33890492893180915ddf98b0ed0593f3c2b37c30",
+      "excerpt": "[대한민국 대회별 성적]\n Position        Team  Games Played  Win  Draw  Loss  Goals For  Goals Against Goal Difference  Points  Year  Goals Per Game  Conceded Per Game  Win Rate\n        4 South Korea             7    3     2     2          8              6               2      11  2002        1.142857           0.857143 42.857143\n       17 South Korea             3    1     1     1          3              4              −1       4  2006        1.000000           1.333333 33.333333\n       15 South Korea             4    1     1     2          6              8              −2       4  2010        1.500000           2.000000 25.000000\n       27 South Korea             3    0     1     2          3              6              −3       1  2014        1.000000           2.000000  0.000000\n       25 South Korea             3    1     0     2          3              3               0       3  2018        1.000000           1.000000 33.333333\n       16 South Korea             4    1     1     2          5              8              -3       4  2022        1.250000           2.000000 25.000000"
+    },
+    "FS-상관관계": {
+      "path": "WHY_NOT_KOREA_WorldCup_Analysis.ipynb",
+      "cell_index": 18,
+      "sha256": "fcc3e370e12db87c7e32f4bd33890492893180915ddf98b0ed0593f3c2b37c30",
+      "excerpt": "[상관관계]\n                   Position  Goals Per Game  Conceded Per Game\nPosition              1.000          -0.678              0.637\nGoals Per Game       -0.678           1.000             -0.234\nConceded Per Game     0.637          -0.234              1.000"
+    },
+    "FS-최종 성적별 비교": {
+      "path": "WHY_NOT_KOREA_WorldCup_Analysis.ipynb",
+      "cell_index": 18,
+      "sha256": "fcc3e370e12db87c7e32f4bd33890492893180915ddf98b0ed0593f3c2b37c30",
+      "excerpt": "[최종 성적별 비교]\n              Teams  Avg_Goals  Avg_Conceded\nStage                                       \nGroup Stage      96      0.826         1.694\nQuarterfinal     24      1.642         0.808\nRound of 16      48      1.240         1.255\nTop 4            24      1.738         0.827"
+    },
+    "M-ARG-2002–2022": {
+      "path": "data/matches.csv",
+      "rows": [
+        670,
+        688,
+        703,
+        766,
+        782,
+        801,
+        811,
+        818,
+        861,
+        875,
+        892,
+        909,
+        916,
+        964,
+        980,
+        995,
+        1008,
+        1012,
+        1015,
+        1017,
+        1075,
+        1092,
+        1109,
+        1118,
+        1190,
+        1209,
+        1224,
+        1235,
+        1243,
+        1246,
+        1249
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-BRA-2002–2022": {
+      "path": "data/matches.csv",
+      "rows": [
+        675,
+        691,
+        706,
+        719,
+        722,
+        727,
+        729,
+        775,
+        789,
+        805,
+        816,
+        821,
+        871,
+        886,
+        903,
+        911,
+        914,
+        954,
+        969,
+        988,
+        1002,
+        1011,
+        1014,
+        1016,
+        1080,
+        1093,
+        1112,
+        1122,
+        1127,
+        1201,
+        1216,
+        1232,
+        1239,
+        1242
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-DEU-2002–2022": {
+      "path": "data/matches.csv",
+      "rows": [
+        669,
+        682,
+        700,
+        714,
+        723,
+        726,
+        729,
+        762,
+        778,
+        795,
+        810,
+        818,
+        822,
+        824,
+        865,
+        878,
+        897,
+        908,
+        916,
+        919,
+        920,
+        965,
+        981,
+        999,
+        1007,
+        1010,
+        1014,
+        1017,
+        1079,
+        1098,
+        1110,
+        1195,
+        1213,
+        1228
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-KOR-2002": {
+      "path": "data/matches.csv",
+      "rows": [
+        679,
+        695,
+        713,
+        721,
+        724,
+        726,
+        728
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-KOR-2002–2022": {
+      "path": "data/matches.csv",
+      "rows": [
+        679,
+        695,
+        713,
+        721,
+        724,
+        726,
+        728,
+        773,
+        790,
+        808,
+        860,
+        875,
+        893,
+        906,
+        970,
+        984,
+        1001,
+        1081,
+        1097,
+        1110,
+        1199,
+        1215,
+        1231,
+        1239
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-NLD-2002–2022": {
+      "path": "data/matches.csv",
+      "rows": [
+        767,
+        783,
+        801,
+        813,
+        866,
+        881,
+        900,
+        910,
+        914,
+        918,
+        921,
+        956,
+        971,
+        987,
+        1004,
+        1013,
+        1015,
+        1016,
+        1188,
+        1204,
+        1219,
+        1234,
+        1243
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-all": {
+      "path": "data/matches.csv",
+      "rows": [
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        913,
+        914,
+        915,
+        916,
+        917,
+        918,
+        919,
+        920,
+        921,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        971,
+        972,
+        973,
+        974,
+        975,
+        976,
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999,
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115,
+        1116,
+        1117,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126,
+        1127,
+        1128,
+        1129,
+        1130,
+        1131,
+        1132,
+        1133,
+        1186,
+        1187,
+        1188,
+        1189,
+        1190,
+        1191,
+        1192,
+        1193,
+        1194,
+        1195,
+        1196,
+        1197,
+        1198,
+        1199,
+        1200,
+        1201,
+        1202,
+        1203,
+        1204,
+        1205,
+        1206,
+        1207,
+        1208,
+        1209,
+        1210,
+        1211,
+        1212,
+        1213,
+        1214,
+        1215,
+        1216,
+        1217,
+        1218,
+        1219,
+        1220,
+        1221,
+        1222,
+        1223,
+        1224,
+        1225,
+        1226,
+        1227,
+        1228,
+        1229,
+        1230,
+        1231,
+        1232,
+        1233,
+        1234,
+        1235,
+        1236,
+        1237,
+        1238,
+        1239,
+        1240,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "M-champions": {
+      "path": "data/matches.csv",
+      "rows": [
+        675,
+        691,
+        706,
+        719,
+        722,
+        727,
+        729,
+        772,
+        787,
+        802,
+        814,
+        819,
+        822,
+        825,
+        873,
+        889,
+        904,
+        913,
+        917,
+        919,
+        921,
+        965,
+        981,
+        999,
+        1007,
+        1010,
+        1014,
+        1017,
+        1074,
+        1091,
+        1107,
+        1118,
+        1126,
+        1130,
+        1133,
+        1190,
+        1209,
+        1224,
+        1235,
+        1243,
+        1246,
+        1249
+      ],
+      "columns": [
+        "tournament_id",
+        "match_id",
+        "home_team_code",
+        "away_team_code",
+        "home_team_score",
+        "away_team_score",
+        "penalty_shootout"
+      ],
+      "sha256": "037f718764758e7dda3a2918276f85fa8389af1d50999d2a480c8a6a49408875"
+    },
+    "R-KOR": {
+      "path": "data/tournament_standings.csv",
+      "rows": [
+        81
+      ],
+      "columns": [
+        "tournament_id",
+        "team_code",
+        "position"
+      ],
+      "sha256": "a1649d448bb769ee1e808e567e5fdc2c3256267aaf14ff5902e26a5b2a7344ea"
+    },
+    "R-KOR-annual": {
+      "path": "data/korea_positions.csv",
+      "rows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "columns": [
+        "year",
+        "position"
+      ],
+      "sha256": "9e4ebef7082a2635f9073208fb632b14c4a26c41f04f1a4d51d7099d9249195c"
+    },
+    "R-champions": {
+      "path": "data/tournament_standings.csv",
+      "rows": [
+        78,
+        86,
+        94,
+        102,
+        110,
+        118
+      ],
+      "columns": [
+        "tournament_id",
+        "team_code",
+        "position"
+      ],
+      "sha256": "a1649d448bb769ee1e808e567e5fdc2c3256267aaf14ff5902e26a5b2a7344ea"
+    },
+    "R-podium": {
+      "path": "data/tournament_standings.csv",
+      "rows": [
+        78,
+        79,
+        80,
+        81,
+        86,
+        87,
+        88,
+        89,
+        94,
+        95,
+        96,
+        97,
+        102,
+        103,
+        104,
+        105,
+        110,
+        111,
+        112,
+        113,
+        118,
+        119,
+        120,
+        121
+      ],
+      "columns": [
+        "tournament_id",
+        "team_code",
+        "position"
+      ],
+      "sha256": "a1649d448bb769ee1e808e567e5fdc2c3256267aaf14ff5902e26a5b2a7344ea"
+    },
+    "S-ARG-legacy": {
+      "path": "data/legacy_comparison.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "Country",
+        "Games",
+        "Wins",
+        "승률(%)",
+        "wins",
+        "win_rate",
+        "shootout_wins",
+        "wins_with_shootout"
+      ],
+      "sha256": "b049f7147c7ce38649b97c8047dd78ca417e7c5a5c31825820241189b55de70c"
+    },
+    "S-country_summary-ARG-None-conceded": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        5
+      ],
+      "columns": [
+        "conceded"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-ARG-None-games": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        5
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-ARG-None-scored": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        5
+      ],
+      "columns": [
+        "scored"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-ARG-None-win_rate": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        5
+      ],
+      "columns": [
+        "win_rate"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-ARG-None-wins": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        5
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-BRA-None-conceded": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        3
+      ],
+      "columns": [
+        "conceded"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-BRA-None-games": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        3
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-BRA-None-scored": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        3
+      ],
+      "columns": [
+        "scored"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-BRA-None-win_rate": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        3
+      ],
+      "columns": [
+        "win_rate"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-BRA-None-wins": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        3
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-DEU-None-conceded": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "conceded"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-DEU-None-games": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-DEU-None-scored": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "scored"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-DEU-None-win_rate": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "win_rate"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-DEU-None-wins": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-conceded": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "conceded"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-ga": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "ga"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-games": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-gf": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "gf"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-scored": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "scored"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-win_rate": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "win_rate"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-KOR-None-wins": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        17
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-NLD-None-games": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        6
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-NLD-None-win_rate": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        6
+      ],
+      "columns": [
+        "win_rate"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-country_summary-NLD-None-wins": {
+      "path": "data/country_summary.csv",
+      "rows": [
+        6
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "4993acbcfd803f8c895d9d621b3f0f644354f47126b47256ac895f97d951603b"
+    },
+    "S-korea_summary-KOR-2002-conceded": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "conceded"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-draws": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "draws"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-ga": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "ga"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-games": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "games"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-gf": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "gf"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-losses": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "losses"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-scored": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "scored"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-korea_summary-KOR-2002-wins": {
+      "path": "data/korea_summary.csv",
+      "rows": [
+        2
+      ],
+      "columns": [
+        "wins"
+      ],
+      "sha256": "5b5bad897531151c59cf13949795a53a7464ae2d08000d51b4593ce9dbca2aaf"
+    },
+    "S-top10": {
+      "path": "data/top10_comparison.csv",
+      "rows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "columns": [
+        "code",
+        "selection_order",
+        "wins",
+        "scored",
+        "conceded",
+        "win_rate"
+      ],
+      "sha256": "367da6f2745c29101112604b85e20b4b4bdbde710b7d2c5ab516cdd3b103abfe"
+    },
+    "T-period": {
+      "path": "data/tournaments.csv",
+      "rows": [
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "columns": [
+        "tournament_id",
+        "tournament_name",
+        "year"
+      ],
+      "sha256": "906b122d80aae5302486bafa9dfd925378503a2a11de6f5db39d6c4879040ce0"
+    }
+  }
+}

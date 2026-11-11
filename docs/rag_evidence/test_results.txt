@@ -1,0 +1,8 @@
+test_abstentions (test_rag_qa.RagTests.test_abstentions) ... ok
+test_supported_and_citations (test_rag_qa.RagTests.test_supported_and_citations) ... ok
+test_year (test_rag_qa.RagTests.test_year) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK

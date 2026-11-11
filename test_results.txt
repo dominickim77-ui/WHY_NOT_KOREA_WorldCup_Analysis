@@ -1,0 +1,28 @@
+Independent score cross-check: 384/384.
+Legacy cross-check: annual Korea totals, champion averages and stage aggregates passed.
+Validated 384 matches, 192 team-editions, 62 teams.
+      games  wins  scored  conceded  win_rate
+code                                         
+DEU      34    23   2.059     0.794    67.647
+BRA      34    23   1.882     0.882    67.647
+FRA      32    18   1.562     0.844    56.250
+ARG      31    18   1.677     1.032    58.065
+NLD      23    16   1.739     0.696    69.565
+ESP      27    15   1.741     1.000    55.556
+ENG      29    12   1.448     0.897    41.379
+BEL      19    12   1.526     0.947    63.158
+PRT      26    11   1.615     1.115    42.308
+URY      22    10   1.273     1.091    45.455
+KOR      24     7   1.167     1.458    29.167
+    Country  Wins  wins  shootout_wins  delta_games  delta_gf  delta_ga
+  Argentina    20    18              3            0         0         0
+     Brazil    23    23              1            0         0         0
+    Germany    23    23              1            0         0         0
+South Korea     7     7              1            0         0         0
+
+검증 환경: Windows, Python 3.12.10.
+통과: ZIP 무결성, 영문 파일명, README 이미지 링크 8개, PNG 디코딩 및 300 dpi 확인.
+통과: ZIP을 새 폴더에 풀고 python analyze.py 실행, CSV와 PNG 8개 재생성.
+통과: 압축 해제 폴더에서 노트북의 코드 셀 4개를 IPython으로 순서대로 실행.
+시각 검수: 생성 PNG 8개를 열어 한글, 숫자 라벨, 축과 출처를 확인. 그래프 4의 겹친 라벨을 수정한 뒤 다시 확인.
+검증 범위: VS Code UI의 Run All은 직접 실행하지 않음.
